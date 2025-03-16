@@ -15,3 +15,14 @@ If you want to run tests locally, you will need to create your own **.env** file
    ```ini
    USERNAME=yourUserName
    PASSWORD=yourPassword
+
+   ### 3. Configure CI/CD Variables (Optional)
+- For remote test execution, environment variables need to be added as **CI/CD variables** on **GitLab**.
+- You must have **maintainer access** to the project to set this up.
+- This setup is **out of scope for now** and will be covered later.
+
+### 4. Run Tests
+- Open a terminal in the project folder.
+- Run the following command to execute tests in **headed mode**:
+  ```sh
+  npx playwright test --headed
